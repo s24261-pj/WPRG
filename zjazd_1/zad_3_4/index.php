@@ -26,6 +26,7 @@ class Exercise_3_4
     }
 }
 
-echo Exercise_3_4::check_prime_number(97);
-echo "<br>";
-echo "Liczba iteracji pętli: " . Exercise_3_4::$numberOfLoopIterations;
+// Zakomentowane na potrzeby wykorzystania klasy w zadaniu: 'zjazd_2/zad_1_4/result.php'
+//echo Exercise_3_4::check_prime_number(97);
+//echo "<br>";
+//echo "Liczba iteracji pętli: " . Exercise_3_4::$numberOfLoopIterations;
