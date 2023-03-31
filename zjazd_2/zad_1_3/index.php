@@ -6,7 +6,7 @@
 <body>
 <h1>Reservation</h1>
 
-<form action="reservation.php" method="POST">
+<form action="reservation-step.php" method="POST">
     <label for="first_name">First name:</label>
     <input type="text" name="first_name" id="first_name" required><br><br>
 
@@ -47,7 +47,7 @@
     <input type="checkbox" name="amenities[]" id="ashtray" value="Ashtray">
     <label for="ashtray">Ashtray</label><br><br>
 
-    <input type="submit" value="Reservation">
+    <input type="submit" value="Next">
 </form>
 </body>
 </html>
