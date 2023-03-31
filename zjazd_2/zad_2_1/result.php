@@ -3,17 +3,17 @@ $dateOfBirth = $_GET['date_of_birth'];
 
 class DateOfBirth
 {
-    public static function getDayOfWeek($date): string
+    public static function get_day_of_week($date): string
     {
         return date('l', strtotime($date));
     }
 
-    public static function getYears($date): int
+    public static function get_years($date): int
     {
         return date_diff(date_create($date), date_create())->y;
     }
 
-    public static function getDaysToNextBirthday($date): bool|int
+    public static function get_days_to_next_birthday($date): bool|int
     {
         $birthday = new DateTime($date);
 
@@ -24,8 +24,8 @@ class DateOfBirth
     }
 }
 
-echo "Day of birth: " . DateOfBirth::getDayOfWeek($dateOfBirth);
+echo "Day of birth: " . DateOfBirth::get_day_of_week($dateOfBirth);
 echo "<br>";
-echo "Years: " . DateOfBirth::getYears($dateOfBirth);
+echo "Years: " . DateOfBirth::get_years($dateOfBirth);
 echo "<br>";
-echo "Days to next birthday: " . DateOfBirth::getDaysToNextBirthday($dateOfBirth);
+echo "Days to next birthday: " . DateOfBirth::get_days_to_next_birthday($dateOfBirth);
