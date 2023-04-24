@@ -1,0 +1,3 @@
+https://www.test.pl;Testowa strona;
+https://www.example.com;Strona example;
+https://www.test-example.pl;Testowa strona example;
